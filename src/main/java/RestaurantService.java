@@ -8,10 +8,10 @@ public class RestaurantService {
     public Restaurant findRestaurantByName(String restaurantName) throws restaurantNotFoundException {
         //return null;
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
-//        Restaurant restaurant = restaurants.stream()
-//                .filter(item -> item.getName().equals(restaurantName))
-//                .findFirst().orElse(null);
-//        return restaurant;
+        Restaurant restaurant = restaurants.stream()
+                .filter(item -> item.getName().equals(restaurantName))
+                .findFirst().orElse(null);
+        return restaurant;
     }
 
 
